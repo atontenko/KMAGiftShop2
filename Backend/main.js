@@ -43,7 +43,7 @@ function startServer(port) {
     //Налаштовуємо сторінки
     configureEndpoints(app);
 
-    //Запуск додатка за вказаним портом
+
     // app.listen(port, '0.0.0.0', function () {
     //     console.log('My Application Running on http://194.44.143.139:'+port+'/');
     // });

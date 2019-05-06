@@ -8,6 +8,14 @@ $(function () {
 	var API = require('./API');
 	Shop.initialiseShop();
 
+	$("#shop-btn").click(function () {
+		window.location = "/shop";
+	});
+
+	$("#main-btn").click(function () {
+		window.location = "/";
+	});
+
 	// //sorting buttons
 	// $("#all-pizza-filter").click(function () {
 	// 	Shop.filterPizza('');
