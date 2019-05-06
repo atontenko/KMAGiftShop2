@@ -1,0 +1,235 @@
+body {
+  font-family: Courier New, monospace;
+  color: #454545;
+  background-image: url("assets/media/3-camp-naukma2.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel{
+  position: fixed;
+  left:0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.label{
+  height: 100px;
+  font-weight: 100;
+  width: 50%;
+  text-align: left;
+  color: #323232;
+}
+
+.label-son{
+  margin-left: 17%;
+}
+
+.logo-naukma{
+  position: absolute;
+  left: 1%;
+  top: 12px;
+}
+
+.name{
+  font-size: 44px;
+  min-width: 350px;
+  margin-top: 18px;
+}
+
+.logo{
+  font-size: 16px;
+  min-width: 350px;
+  margin-top: -8px;
+}
+
+.panel-buttons-parent{
+  width: 50%;
+  position: relative;
+}
+
+.panel-buttons{
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  top: 40%;
+  left: 38%;
+}
+
+.menu-button{
+  font-family: Courier New, monospace;
+  background: none;
+  border: none;
+  color: #323232;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.cart-btn{
+  height: 18.8px;
+}
+
+.container{
+  width: 90%;
+  margin-left: 5%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  bottom: 0;
+  position: relative;
+}
+
+.shop-header{
+  padding-top:100px;
+  width: 90%;
+  margin-left: 5%;
+  height: 60px;
+  background: rgba(66,84,168, 1);
+  color: white;
+  font-size: 40px;
+}
+.category-name{
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+.side-panel{
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid #b4b4b4;
+  background: rgba(238, 238, 238, 0.5);
+  position: absolute;
+}
+
+.side-panel-son{
+  position: sticky;
+  top:100px;
+  bottom:150px;
+}
+
+.categories{
+  width: 100%;
+  font-size: 20px;
+  height: 70%;
+}
+
+.category{
+  padding: 10px 0 10px 15px;
+  font-weight: 700;
+  border-bottom: 1px solid  rgba(144, 186, 228, 0.5);
+  border-top: 1px solid  rgba(144, 186, 228, 0.5);
+}
+.category:hover{
+  background: #eceeec;
+}
+.sub-category{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 25px;
+}
+.sub-category:hover{
+  background: #eceeec;
+}
+
+.products-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 2% 2%;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.product{
+  width: 30%;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.product-image {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.product-image:hover{
+  transform: scale(1.05);
+  border-radius: 3px;
+}
+.product-image:active{
+  transform: scale(2.5);
+  border-radius: 3px;
+}
+
+.product-name{
+  padding-top: 10px;
+  height: 45px;
+  font-family: Snell Roundhand,Georgia, cursive;
+  font-size: 20px;
+  font-style: italic;
+}
+.product-price{
+  font-family: Snell Roundhand,Georgia, cursive;
+}
+
+.contacts{
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  background: rgba(66,84,168, 1);
+}
+
+@media (max-width: 950px) {
+  .panel {
+    flex-direction: column;
+  }
+  .label {
+    width: 100%;
+    text-align: center;
+  }
+  .label-son {
+    margin-left: 0;
+  }
+  .name {
+    margin-top: 1%;
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .panel-buttons-parent {
+    width: 100%;
+  }
+  .panel-buttons {
+    top: -29px;
+    min-width: 335px;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+  .menu-button{
+    font-size: 14px;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .logo-naukma{
+    display: none;
+  }
+
+}

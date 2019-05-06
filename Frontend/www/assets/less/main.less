@@ -1,0 +1,307 @@
+body {
+  font-family: Courier New, monospace;
+  color: #454545;
+  background-image: url("assets/media/3-camp-naukma.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: white;
+}
+
+.panel{
+  position: fixed;
+  left:0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label{
+  height: 100px;
+  font-weight: 100;
+  width: 50%;
+  text-align: left;
+  color: #323232;
+}
+
+.label-son{
+  margin-left: 17%;
+}
+
+.logo-naukma{
+  position: absolute;
+  left: 1%;
+  top: 12px;
+}
+
+.name{
+  font-size: 44px;
+  min-width: 350px;
+  margin-top: 18px;
+}
+
+.logo{
+  font-size: 16px;
+  min-width: 350px;
+  margin-top: -8px;
+}
+
+.panel-buttons-parent{
+  width: 50%;
+  position: relative;
+}
+
+.panel-buttons{
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  top: 40%;
+  left: 38%;
+}
+
+.menu-button{
+  font-family: Courier New, monospace;
+  background: none;
+  border: none;
+  color: #323232;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.cart-btn{
+  height: 18.8px;
+}
+
+.container{
+  padding-top:100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-label{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo_naukma_bw{
+  margin-top:100px ;
+  height: 234px;
+  width: 300px;
+}
+
+.about-us-btn{
+  margin-top: 90px;
+  margin-bottom: 40px;
+  font-family: Courier New, monospace;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid white;
+  background: rgba(46, 47, 46, 0.4);
+  width: 200px;
+  height: 75px;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+.about-us-btn:hover{
+  background: white;
+  color: #454545;
+  transition: all 0.4s ease-in-out;
+}
+
+.down-arrow{
+  margin-bottom: 20px;
+}
+
+.special-offers-parent{
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  min-width: 395px;
+  padding-bottom: 60px;
+}
+
+.special-offers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.product-example{
+  width: 25%;
+  border: 1px solid #b0b0b0;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: all 0.4s ease-in-out;
+  font-family: Snell Roundhand,Georgia, cursive;
+  font-size: 80%;
+  vertical-align: center;
+}
+.product-example:hover{
+  transform: scale(1.2);
+  border-radius: 3px;
+}
+
+.spec-of-image{
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.spec-of-description{
+  padding-top: 10px;
+  height: 45px;
+  font-family: Snell Roundhand,Georgia, cursive;
+}
+
+.about-us{
+  background-image: url("assets/media/about-us-img.jpg");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  min-width: 395px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  color: white;
+  height: 500px;
+}
+
+.about-us-son{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.about-us-top{
+  margin-left: 10%;
+  width: 80%;
+  font-size: large;
+  background: rgba(255,255,255,0.85);
+  border-radius: 3px;
+  height: auto;
+  padding: 15px;
+  color: #454545;
+  transition: all 0.2s ease-in-out;
+}
+.about-us-top:hover{
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.about-us-bottom{
+  margin-left: 10%;
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.right-text{
+  min-width: 159px;
+  padding: 15px;
+  width: 20%;
+  color: rgb(69,69,69);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.85);
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.right-text:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.contacts{
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  background: rgba(66,84,168, 1);
+}
+
+
+@media (max-width: 950px){
+  .panel{
+    flex-direction: column;
+  }
+  .label{
+    width: 100%;
+    text-align: center;
+  }
+  .label-son{
+    margin-left: 0;
+  }
+  .name{
+    margin-top: 1%;
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+  }
+  .panel-buttons-parent{
+    width: 100%;
+  }
+  .panel-buttons{
+    top: -29px;
+    min-width: 335px;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+  .menu-button{
+    font-size: 14px;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .logo-naukma{
+    display: none;
+  }
+
+  .container{
+    padding-top:100px;
+  }
+  .logo_naukma_bw{
+    margin-top: 70px;
+  }
+  .about-us-btn {
+    margin-top: 100px;
+  }
+  .down-arrow{
+    margin-bottom: 32px;
+  }
+
+  .spec-of-description{
+    display: none;
+  }
+
+  .about-us-bottom{
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 10px;
+    height: auto;
+  }
+  .right-text{
+    width: 100%;
+  }
+}
