@@ -1,7 +1,7 @@
 body {
   font-family: Courier New, monospace;
   color: #454545;
-  background-image: url("assets/media/3-camp-naukma.jpg");
+  background-image: url("/assets/media/3-camp-naukma.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -72,6 +72,11 @@ body {
   color: #323232;
   margin-right: 5px;
   font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu-button:hover{
+  background: #eceeec;
 }
 
 .cart-btn{
@@ -99,8 +104,8 @@ body {
 
 .logo_naukma_bw{
   margin-top:100px ;
-  height: 234px;
-  width: 300px;
+  height: 244px;
+  width: 304px;
 }
 
 .about-us-btn{
@@ -116,6 +121,7 @@ body {
   height: 75px;
   border-radius: 2px;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .about-us-btn:hover{
   background: white;
@@ -150,7 +156,7 @@ body {
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: all 0.4s ease-in-out;
-  font-family: Snell Roundhand,Georgia, cursive;
+  font-family: 'Bad Script', Snell Roundhand,Georgia, cursive;
   font-size: 80%;
   vertical-align: center;
 }
@@ -172,16 +178,16 @@ body {
 }
 
 .about-us{
-  background-image: url("assets/media/about-us-img.jpg");
+  background-image: url("/assets/media/about-us-img.jpg");
   background-size: cover;
   width: 100%;
   text-align: center;
   font-size: 30px;
   min-width: 395px;
   padding-bottom: 60px;
-  margin-bottom: 60px;
   color: white;
   height: 500px;
+  cursor: default;
 }
 
 .about-us-son{
@@ -232,12 +238,39 @@ body {
 
 
 .contacts{
-  width: 90%;
-  margin-left: 5%;
-  height: 150px;
+  width: 100%;
+  min-width: 395px;
   background: rgba(66,84,168, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 60px;
+  color: white;
 }
 
+.contacts-son{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacts-left{
+  width: 40%;
+  font-size: 18px;
+  min-width: 300px;
+}
+
+.contacts-right{
+  width: 40%;
+  height: 300px;
+  background: azure;
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
 
 @media (max-width: 950px){
   .panel{
@@ -286,6 +319,7 @@ body {
     margin-top: 100px;
   }
   .down-arrow{
+    margin-top: 10px;
     margin-bottom: 32px;
   }
 
@@ -293,6 +327,9 @@ body {
     display: none;
   }
 
+  .about-us{
+    height: auto;
+  }
   .about-us-bottom{
     width: 80%;
     margin-left: 10%;
@@ -302,6 +339,7 @@ body {
     height: auto;
   }
   .right-text{
+    margin-top: 10px;
     width: 100%;
   }
 }

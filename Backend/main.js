@@ -1,6 +1,3 @@
-/**
- * Created by chaika on 09.02.16.
- */
 var express = require('express');
 var path = require('path');
 var morgan = require('morgan');
@@ -10,18 +7,11 @@ function configureEndpoints(app) {
     var pages = require('./pages');
     var api = require('./api');
 
-    //Налаштування URL за якими буде відповідати сервер
-    //Отримання списку піц
     app.get('/api/get-item-list/', api.getItemList);
-
-    //Сторінки
-    //Головна сторінка
     app.get('/', pages.mainPage);
 
-    //Сторінка замовлення
     app.get('/shop', pages.shopPage);
 
-    //Якщо не підійшов жоден url, тоді повертаємо файли з папки www
     app.use(express.static(path.join(__dirname, '../Frontend/www')));
 }
 
@@ -43,7 +33,7 @@ function startServer(port) {
     //Налаштовуємо сторінки
     configureEndpoints(app);
 
-    //Запуск додатка за вказаним портом
+
     // app.listen(port, '0.0.0.0', function () {
     //     console.log('My Application Running on http://194.44.143.139:'+port+'/');
     // });
